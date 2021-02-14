@@ -4,6 +4,7 @@ import './top10.css'
 function Top10coins(props){
 let data = props.coins
 const [redOrGreen, setredOrGreen] = useState(true)
+
     return(
         <div className="top10page">
 
@@ -14,7 +15,13 @@ const [redOrGreen, setredOrGreen] = useState(true)
                     {data.map((coin) =>{
                   
                         
-                    console.log(typeof(coin.price_change_percentage_24h))
+                         if(JSON.stringify(coin.price_change_percentage_24h).includes("-")){
+                            // setredOrGreen(false)
+                            console.log(redOrGreen)
+                            
+                        }
+                       
+                 
                     return(
                 <li className="listItem" key={coin}>
                     <section className="coinAndLogo">

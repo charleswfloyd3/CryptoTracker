@@ -14,8 +14,8 @@ function App() {
   const [cryptoData,setCryptodata]= useState({coin: "sdf",
   price: "sdf"});
   const [top10coins, settop10coins] = useState([])
+  const [counter, setCounter] = useState(0)
   let coins10 = []
-console.log(cryptoData)
 
   const handleQueryChange = (e) =>{
    Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false").then(response =>{
@@ -41,16 +41,22 @@ console.log(cryptoData)
   })
   }
   useEffect(() =>{
-    Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false").then(response =>{
+    setCounter(1)
+  },[])
+  useEffect(() =>{
+   
+Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false").then(response =>{
       
       for(let i =0; i< 5; i++){
         let coinData = response.data[i]
         coins10.push(coinData)
       }
       settop10coins(coins10)
-      // console.log(top10coins)
+      console.log(top10coins)
   })
-  },[])
+   
+    
+  },[counter])
 
   const Search = (e) => {
     e.preventDefault()
@@ -82,7 +88,6 @@ console.log(cryptoData)
     }).catch(error => console.log("error"))
 
   }
-
 
   return (
       <Switch>

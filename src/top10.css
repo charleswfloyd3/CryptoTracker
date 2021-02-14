@@ -37,6 +37,8 @@
 	text-align: center;
 	padding-top: 4%; */
 	display: grid;
+	/* grid-template-columns: 93.3% 3.3% 3.3%; */
+	/* grid-template-rows: 1fr; */
 }
 .coinAndLogo {
 	float: left;
@@ -69,4 +71,88 @@
 .coinImage {
 	height: 3vw;
 	margin-left: 2vw;
+}
+@media (max-width: 940px) {
+	.top10section {
+		margin-top: -5.5%;
+
+		height: fit-content;
+		width: 70vw;
+		background-color: black;
+		color: white;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	}
+	.coinAndLogo {
+		float: left;
+		display: inline;
+		font-size: 4.25vw;
+		margin-left: -1vw;
+		margin-right: 35vw;
+	}
+	.priceCurrent {
+		float: right;
+		margin-left: 40vw;
+		display: block;
+	}
+	.percentChange24 {
+		margin-left: 17vw;
+		margin-top: -4%;
+	}
+	.currentPrice10 {
+		font-size: 3vw;
+		margin-top: -25%;
+		float: right;
+		margin-right: 4vw;
+	}
+	.percentChangeGreen {
+		margin-left: 12.5vw;
+		color: green;
+		font-size: 2vw;
+		margin-top: 0%;
+	}
+	.top10page {
+		height: 90vh;
+	}
+}
+@media (max-width: 650px) {
+	.top10section {
+		margin-top: -5.5%;
+
+		height: fit-content;
+		width: 70vw;
+		background-color: black;
+		color: white;
+		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	}
+	.coinAndLogo {
+		float: left;
+		display: inline;
+		font-size: 4.25vw;
+		margin-left: -1vw;
+		margin-right: 35vw;
+	}
+	.priceCurrent {
+		float: right;
+		margin-left: 40vw;
+		display: block;
+	}
+	.percentChange24 {
+		margin-left: 17vw;
+		margin-top: -4%;
+	}
+	.currentPrice10 {
+		font-size: 3vw;
+		margin-top: -20%;
+		float: right;
+		margin-right: 4vw;
+	}
+	.percentChangeGreen {
+		margin-left: 12.5vw;
+		color: green;
+		font-size: 2vw;
+		margin-top: 0%;
+	}
+	.top10page {
+		height: 90vh;
+	}
 }
