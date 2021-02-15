@@ -94,7 +94,7 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
 <Route exact path="/">
     <div>
     <div className="App">
-      <h1 className="websiteTitle">Crypto Tracker<img src="images/btclogo.png" className="btcLogo"></img></h1>
+      <h1 className="websiteTitle">Cryptobase<img src="images/btclogo.png" className="btcLogo"></img></h1>
       <p className="coinSearchBarTitle"> Search for your coin...</p>
       <form className="searchBar">
         <input type="text" placeholder="Search..." className="coinSearchBar" onChange={handleQueryChange} ref={coinRef}></input>
