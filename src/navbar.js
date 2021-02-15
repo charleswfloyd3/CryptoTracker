@@ -6,9 +6,12 @@ function Navbar(props){
 
     return(
         <nav className="navbar">
+            
             <p className="companyName"><img className="companySymbol" src={props.coinImage} ></img></p>
-            <button className="signin_btn"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Search</Link></button>
+            <button className="signin_btn"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Track</Link></button>
+                        <button className="signup_btn"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Search</Link></button>
             <button className="signup_btn"><Link style={{ color: 'inherit', textDecoration: 'inherit'}} to="/">Home</Link></button>
+
 
         </nav>
     )

@@ -28,14 +28,15 @@ function CoinData(props) {
           <img src={data.image} className="coinLogo" ></img>
           {data.id == undefined ?  <p className="coinPrice">${data.current_price}</p>
  
-          :<p className="coinPrice"> ${numberWithCommas(data.current_price)}</p>
+          :<p className="coinPrice" style={{color: JSON.stringify(data.price_change_percentage_24h).includes("-") ? "red" : "lime"}}> ${data.current_price}</p>
           }
       </section>
 
       <section className="coinRow2">
-          <p className="coinSymbol">({data.symbol})</p>
-          <p className="coin24hrchangemoney">24hrs($):  {data.price_change_24h}</p>
+          {/* <p className="coinSymbol">({data.symbol})</p>
           <p className="coin24hrchangepercentage">24hrs(%): {data.price_change_percentage_24h}</p>
+
+          <p className="coin24hrchangemoney">24hrs($):  {data.price_change_24h}</p> */}
 
       </section>
 

@@ -2,69 +2,79 @@
 	height: fit-content;
 	width: 100vw;
 	top: 0;
-	background-image: linear-gradient(rgb(15, 14, 14), black);
+	background-image: url("backgrondimage.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .coinData1 {
 	height: 90vh;
 	width: 100vw;
 	top: 0;
-
 	justify-content: center;
 	display: flex;
-	align-items: center;
+
+	/* align-items: center; */
 }
 
 .coinStuff {
-	position: absolute;
-	background-color: white;
+	background-color: black;
 
 	width: 50vw;
-	border: 4px solid black;
+	/* border: 4px solid black; */
 	height: 500px;
 	overflow-x: hidden;
-	margin-top: -15%;
+	margin-top: 0%;
+	color: white;
 }
 
 .coinRow1 {
 	display: flex;
+
+	color: white;
+}
+.coinNamecontainer {
+	color: white;
 }
 .coinName {
-	font-size: 50px;
-	color: black;
+	font-size: 3.5vw;
+	color: white;
 	margin-left: 3vw;
 }
 .coinLogo {
-	height: 60px;
+	height: 3.4vw;
 	margin-top: 9%;
 	margin-left: 1vw;
 }
 .coinPrice {
 	/* margin-left: 5vw; */
-	font-size: 3.5vw;
+	font-size: 4.5vw;
 	margin: 0 auto;
 	margin-top: 7%;
-	margin-left: 10vw;
+	/* margin-left: 20vw; */
+	float: right;
+	margin-right: 3vw;
+	color: lime;
 }
 
 .coinRow2 {
-	display: flex;
+	display: block;
 }
 .coinSymbol {
-	margin-left: 3vw;
-	font-size: 3vw;
-	margin-top: -10%;
+	margin-left: 6.5vw;
+	font-size: 2.5vw;
+	margin-top: -7.5%;
 }
 .coin24hrchangemoney {
-	margin-left: 23vw;
-	font-size: 1.25vw;
-	margin-top: -6%;
-	width: 80vw;
+	/* float: right; */
 	color: red;
+	font-size: 1.5vw;
+	margin-top: 10%;
+	margin-right: -15vw;
 }
 .coin24hrchangepercentage {
+	/* float: right; */
 	color: red;
-	margin-left: -17.75vw;
-	font-size: 1.25vw;
-	margin-top: 1%;
-	width: 80vw;
+	font-size: 1.5vw;
+	margin-top: -1%;
+	margin-right: 3vw;
 }

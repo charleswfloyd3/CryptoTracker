@@ -29,7 +29,7 @@ const [redOrGreen, setredOrGreen] = useState(true)
                         <img  className="coinImage" src={coin.image} ></img>
                     </section>
                     <section className="percentChange24">
-                        <p className={redOrGreen ? "percentChangeGreen": "percentChangeRed"}> {coin.price_change_percentage_24h}</p> 
+                        <p className={JSON.stringify(coin.price_change_percentage_24h).includes("-") ? "percentChangeRed": "percentChangeGreen"}> {JSON.stringify(coin.price_change_percentage_24h).includes("-") ? <section><img src="images/redtriangle.png" className="negativeArrow"></img>  {coin.price_change_percentage_24h}</section> : <section><img src="images/comeon.png" className="negativeArrow"></img>{  " +" + coin.price_change_percentage_24h} </section> }</p> 
                     </section>
                     <section className="priceCurrent">
                         <p className="currentPrice10">${coin.current_price}</p>

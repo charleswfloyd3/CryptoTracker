@@ -1,10 +1,10 @@
 .top10page {
 	/* positon: absolute; */
-	height: 125vh;
+	height: 50vw;
 	width: 100vw;
-	/* background-image: linear-gradient(rgb(15, 14, 14), black); */
-	/* background-image: url("./images/backgrondimage.png");
-     */
+	background-image: url("backgrondimage.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 	background-color: #f2a900;
 
 	justify-content: center;
@@ -19,13 +19,13 @@
 	font-weight: 500;
 }
 .top10section {
-	margin-top: -5.5%;
-
 	height: fit-content;
 	width: 70vw;
 	background-color: black;
 	color: white;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+	margin-top: 0%;
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
 }
 .listOfCoins {
 	margin-top: 7.5%;
@@ -63,11 +63,16 @@
 }
 .percentChangeGreen {
 	margin-left: 15vw;
-	color: green;
+	color: lime;
 	font-size: 1.25vw;
 	margin-top: 0%;
 }
-
+.percentChangeRed {
+	margin-left: 15vw;
+	color: red;
+	font-size: 1.25vw;
+	margin-top: 0%;
+}
 .coinImage {
 	height: 3vw;
 	margin-left: 2vw;
@@ -106,16 +111,24 @@
 	}
 	.percentChangeGreen {
 		margin-left: 12.5vw;
-		color: green;
+		font-size: 2vw;
+		margin-top: 0%;
+	}
+	.percentChangeRed {
+		margin-left: 12.5vw;
+		color: red;
 		font-size: 2vw;
 		margin-top: 0%;
 	}
 	.top10page {
-		height: 90vh;
+		height: 70vw;
+	}
+	.top10section {
+		margin-top: 5%;
 	}
 }
 @media (max-width: 650px) {
-	.top10section {
+	/* .top10section {
 		margin-top: -5.5%;
 
 		height: fit-content;
@@ -123,7 +136,7 @@
 		background-color: black;
 		color: white;
 		font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-	}
+	} */
 	.coinAndLogo {
 		float: left;
 		display: inline;
@@ -148,11 +161,22 @@
 	}
 	.percentChangeGreen {
 		margin-left: 12.5vw;
-		color: green;
+		font-size: 2vw;
+		margin-top: 0%;
+	}
+	.percentChangeRed {
+		margin-left: 12.5vw;
+		color: red;
 		font-size: 2vw;
 		margin-top: 0%;
 	}
 	.top10page {
-		height: 90vh;
+		height: 85vw;
 	}
+	.top10section {
+		margin-top: 0%;
+	}
+}
+.negativeArrow {
+	height: 1vw;
 }
