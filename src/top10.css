@@ -17,6 +17,7 @@
 	font-size: 3vw;
 	color: #ffb300;
 	font-weight: 500;
+	font-family: monospace;
 }
 .top10section {
 	height: fit-content;
@@ -25,7 +26,6 @@
 	color: white;
 	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 	margin-top: 0%;
-	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
 }
 .listOfCoins {
 	margin-top: 7.5%;

@@ -1,5 +1,14 @@
 body {
 	overflow-x: hidden;
+	display: flex;
+}
+.outerDiv {
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+	/* position: absolute; */
+	/* -ms-transform: translateY(-50%); */
+	/* transform: translateY(-50%); */
 }
 .App {
 	text-align: center;
@@ -7,16 +16,22 @@ body {
 	overflow: hidden;
 	margin-top: 0px;
 	color: white;
+
 	background-image: linear-gradient(rgb(15, 14, 14), black);
 	/* background-image: url("backgrondimage.png");
 	background-repeat: no-repeat;
 	background-size: cover; */
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin: 0 auto;
 }
 .websiteTitle {
-	margin-top: 10%;
+	margin-top: 17%;
 	font-size: 60px;
 	font-weight: 400;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	font-family: monospace;
 }
 .btcLogo {
 	margin-left: 1vw;
@@ -25,7 +40,9 @@ body {
 .coinSearchBarTitle {
 	margin-top: 10%;
 	font-size: 22px;
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	font-family: monospace;
+
 	color: #f2a900;
 }
 .coinSearchBar {
@@ -36,6 +53,11 @@ body {
 	border: 2px solid black;
 	outline: none;
 	font-size: 25px;
+	font-family: monospace;
+	border: 0.1px solid transparent;
+	padding-left: 1vw;
+	border-top-left-radius: 180px;
+	border-bottom-left-radius: 180px;
 }
 .searchBar {
 	display: flex;
@@ -44,15 +66,22 @@ body {
 	margin: 0 auto;
 }
 .searchBtn {
-	height: 36.75px;
+	height: 36.48px;
 	margin-top: 2%;
 	background-color: #f2a900;
 	outline: none;
 	border: none;
+	border: 0.1px solid orange;
+	/* border-right: 2px solid orange; */
+
+	border-top-right-radius: 180px;
+	border-bottom-right-radius: 180px;
+
 	color: white;
 	font-size: 1.5vw;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	width: 8vw;
+	font-family: monospace;
 }
 
 .downarrow {
@@ -157,15 +186,12 @@ body {
 		margin-left: 0 auto;
 		/* z-index: .5; */
 	}
-	.coinSearchBarTitle {
+	/* .coinSearchBarTitle {
 		margin-top: 18%;
-	}
+	} */
 }
-@media (max-width: 718px) {
-	.websiteTitle {
-		margin-top: 21%;
-		font-size: 50px;
-	}
+
+@media (max-width: 788px) {
 	.btcLogo {
 		margin-left: 1vw;
 		width: 50px;
@@ -183,16 +209,8 @@ body {
 		font-size: 20px;
 	}
 }
-@media (max-width: 562px) {
-	.websiteTitle {
-		margin-top: 28%;
-	}
-}
+
 @media (max-width: 457px) {
-	.websiteTitle {
-		margin-top: 40%;
-		font-size: 50px;
-	}
 	.btcLogo {
 		margin-left: 1vw;
 		width: 50px;
@@ -209,8 +227,16 @@ body {
 		/* z-index: .5; */
 	}
 }
+
 @media (max-width: 360px) {
 	.coinSearchBarTitle {
 		margin-top: 22%;
 	}
+}
+.sloganCrypto {
+	margin-top: 5%;
+	font-size: 19px;
+	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+	font-family: monospace;
+	color: #f2a900;
 }
