@@ -20,11 +20,39 @@ function App() {
   const [shortCutStatus, setshortCutStatus] = useState(false)
   let coins10 = []
 
+
+  const shortcutAddition = (e) =>{
+   Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false").then(response =>{
+    let coinSearched = coinRef.current.value
+
+    for(let i =0; i< response.data.length; i++){
+        
+        if(response.data[i].id == shortcutCoin.current.value ){
+            console.log("shortcut added")
+            shortcutCoin.current.value =""
+            setshortCutStatus(false)
+
+            break
+
+        }
+        else{
+            console.log("failed to add shortcut")
+
+        }
+      }
+
+  })
+  }
   const shortcutHandler = () =>{
     setshortCutStatus(true)
   }
-  const setShortF = () =>{
+    const shortcutHandlerFail = () =>{
     setshortCutStatus(false)
+            shortcutCoin.current.value =""
+
+  }
+  const setShortF = () =>{
+    shortcutAddition()
   }
   const handleQueryChange = (e) =>{
    Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false").then(response =>{
@@ -32,7 +60,7 @@ function App() {
 
     for(let i =0; i< response.data.length; i++){
         
-        if(response.data[i].id == coinSearched ){
+        if(response.data[i].id == coinSearched.toLowerCase() ){
             let coinData = response.data[i]
             setCryptodata(coinData)
             console.log(cryptoData)
@@ -119,7 +147,7 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
 
       {/* <p className="coinSearchBarTitle"> Search for your coin...</p> */}
       <form className="searchBar">
-        <input type="text" placeholder="Search..." className="coinSearchBar" onChange={handleQueryChange} ref={coinRef}></input>
+        <input type="text" placeholder="Search..." className="coinSearchBar" autoFocus={true} onChange={handleQueryChange} ref={coinRef}></input>
        <button className="searchBtn" onClick={Search}> <Link style={{ color: 'inherit', textDecoration: 'inherit'}} to={searchStatus}>Search</Link></button>
       </form>
       <div className="shortcut" onClick={shortcutHandler}>
@@ -131,9 +159,9 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
         <div className="shortCutModalInner">
           <p className="shortcutModalTitle">Add coin shortcut</p>
           <p className="shortcutModalCoinTitle">Coin Name</p>
-          <input type="text" className="shortcutModalinputbox" ref={shortcutCoin}></input>
+          <input type="text" className="shortcutModalinputbox" autoFocus={true} ref={shortcutCoin} ></input>
           <section className="exitButtons">
-            <button className="cancelBtn" onClick={setShortF}>Cancel</button>
+            <button className="cancelBtn" onClick={shortcutHandlerFail}>Cancel</button>
             <button className="doneBtn" onClick={setShortF}>Done</button>
           </section>
         </div>

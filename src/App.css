@@ -312,7 +312,7 @@ body {
 .shortcutModalinputbox {
 	width: 86.5%;
 	height: 30px;
-	font-size: 14px;
+	font-size: 18px;
 	border: 1px solid transparent;
 	border-radius: 4px;
 	outline-style: none;
@@ -341,7 +341,7 @@ body {
 	padding: 8px;
 }
 .exitButtons {
-	margin-left: 19.9vw;
+	margin-left: 330px;
 	margin-top: 60px;
 	display: flex;
 }
@@ -367,8 +367,9 @@ body {
 	/* background-color: white; */
 	background-size: cover;
 	border: 2px solid white;
-	width: 30vw;
+	width: 500px;
 	margin: 0 auto;
-	margin-top: 44%;
+	margin-top: 40%;
 	z-index: 10;
+	border-radius: 15px;
 }
