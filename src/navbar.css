@@ -40,11 +40,10 @@
 	border: none;
 	/* border-bottom: 2.5px solid black;
 	border-top: 2.5px solid black; */
-	font-size: 33px;
+	font-size: 32px;
 	/* border-radius: 90px; */
 	color: black;
 	padding: 1px;
-
 	font-family: monospace;
 }
 .signin_btn {
@@ -57,9 +56,8 @@
 	width: 100px;
 	background-color: inherit;
 	border: none;
-
 	/* border-radius: 90px; */
-	font-size: 33px;
+	font-size: 35px;
 	padding: 1px;
 	font-weight: 100;
 	text-decoration: none;

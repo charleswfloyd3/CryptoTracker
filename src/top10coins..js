@@ -3,8 +3,19 @@ import './top10.css'
 
 function Top10coins(props){
 let data = props.coins
-const [redOrGreen, setredOrGreen] = useState(true)
+let linkFromTop5 = props.linkFromTop5
+let setlinkFromTop5 = props.setlinkFromTop5
 
+const [redOrGreen, setredOrGreen] = useState(true)
+  const linkFromTop50 = () =>{
+    console.log(linkFromTop5)
+    if(linkFromTop5){
+      setlinkFromTop5(false)
+    }
+    else if(linkFromTop5 == false){
+      setlinkFromTop5(true)
+    }
+  }
     return(
         <div className="top10page">
 
@@ -24,12 +35,12 @@ const [redOrGreen, setredOrGreen] = useState(true)
                  
                     return(
                 <li className="listItem" key={coin}>
-                    <section className="coinAndLogo">
+                    <section className="coinAndLogo" onClick={props.Search}>
                          {coin.id[0].toUpperCase()+ coin.id.slice(1)}
                         <img  className="coinImage" src={coin.image} ></img>
                     </section>
                     <section className="percentChange24">
-                        <p className={JSON.stringify(coin.price_change_percentage_24h).includes("-") ? "percentChangeRed": "percentChangeGreen"}> {JSON.stringify(coin.price_change_percentage_24h).includes("-") ? <section><img src="images/redtriangle.png" className="negativeArrow"></img>  {coin.price_change_percentage_24h}</section> : <section><img src="images/save.png" className="negativeArrow"></img>{  " +" + coin.price_change_percentage_24h} </section> }</p> 
+                        <p className={JSON.stringify(coin.price_change_percentage_24h).includes("-") ? "percentChangeRed": "percentChangeGreen"}> {JSON.stringify(coin.price_change_percentage_24h).includes("-") ? <section><img src="images/down.png" className="negativeArrow"></img>  {coin.price_change_percentage_24h}</section> : <section><img src="images/up.png" className="negativeArrow"></img>{  " +" + coin.price_change_percentage_24h} </section> }</p> 
                     </section>
                     <section className="priceCurrent">
                         <p className="currentPrice10">${coin.current_price}</p>
