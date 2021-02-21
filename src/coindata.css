@@ -52,7 +52,7 @@
 	/* margin-left: 5vw; */
 	font-size: 4.5vw;
 	margin: 0 auto;
-	margin-top: 7%;
+	margin-top: 6%;
 	/* margin-left: 20vw; */
 	float: right;
 	margin-right: 3vw;
@@ -173,41 +173,239 @@
 	border-radius: 20px;
 	outline-style: none;
 	margin-left: 31.45vw;
+	width: 14vw;
 }
 @media (max-width: 1245px) {
-	.coinRow1 {
-		display: block;
+	.coinStuff {
+		width: 70vw;
+		margin-top: 7%;
 	}
+	/* .coinRow1 {
+		display: block;
+	} */
 	.coinName {
 		color: white;
 		text-align: center;
+		font-size: 4.5vw;
+		margin-top: 1%;
 	}
 	.coinLogo {
-		margin-top: -10%;
-		margin-left: 40vw;
-	}
-	.coinSymbol {
-		margin-left: 25vw;
-		margin-top: -100px;
-	}
-	.coinRow2 {
-		display: none;
-	}
-	.coinRow3 {
-		display: none;
-	}
-	.coinRow4 {
-		display: none;
-	}
-	.chart {
-		display: none;
+		margin-top: 1.35%;
+		margin-left: 1.35vw;
+		height: 4.5vw;
 	}
 	.coinPrice {
 		float: none;
-		/* margin-left: 5vw; */
-		font-size: 5.5vw;
-		margin-left: 15.5vw;
-		margin-top: -5%;
+		font-size: 7.5vw;
+		margin-left: 15.2vw;
+		margin-top: -2%;
 		color: lime;
+	}
+	.coinSymbol {
+		margin-left: 8vw;
+		margin-top: -6%;
+		font-size: 2.5vw;
+	}
+	.coinRow3 {
+		/* display: none; */
+	}
+	.coinRow4 {
+		/* display: none; */
+	}
+	.chart {
+		margin-top: 4%;
+		margin-left: 23.1vw;
+		width: 18vw;
+	}
+	.coinRow2 {
+	}
+
+	.coin24hrchangemoneyred {
+		color: red;
+		font-size: 2vw;
+
+		margin-top: 10%;
+	}
+	.coin24hrchangemoneygreen {
+		color: lime;
+		font-size: 2vw;
+		margin-top: 1%;
+	}
+	.coin24hrchangepercentagered {
+		color: red;
+		font-size: 2vw;
+		margin-top: -1%;
+	}
+	.coin24hrchangepercentagegreen {
+		color: lime;
+		font-size: 2vw;
+		margin-top: 4%;
+	}
+	.hr24Change {
+		float: left;
+		margin-left: 3vw;
+		margin-top: 4%;
+		/* border: 1px solid white; */
+		width: fit-content;
+		height: fit-content;
+	}
+	.marketCap {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		width: fit-content;
+		height: fit-content;
+		/* border: 1px solid white; */
+		margin-left: 2.25vw;
+		margin-top: 10%;
+	}
+	.volumeTotal {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		width: fit-content;
+		height: fit-content;
+		/* border: 1px solid white; */
+		margin-left: 2.25vw;
+		margin-top: 1%;
+	}
+
+	.coinRow4 {
+		width: fit-content;
+		height: fit-content;
+		margin-top: 25%;
+		margin-left: 3vw;
+	}
+	.low24h {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		margin-right: 9vw;
+		/* border: 1px solid white; */
+		/* margin-left: 2.25vw; */
+	}
+	.high24h {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		margin-top: 10%;
+		/* border: 1px solid white; */
+	}
+}
+@media (max-width: 850px) {
+	.coinStuff {
+		width: 70vw;
+		margin-top: 7%;
+	}
+	/* .coinRow1 {
+		display: block;
+	} */
+	.coinName {
+		color: white;
+		text-align: center;
+		font-size: 4.5vw;
+		margin-top: 1%;
+	}
+	.coinLogo {
+		margin-top: 1.35%;
+		margin-left: 1.35vw;
+		height: 4.5vw;
+	}
+	.coinPrice {
+		float: none;
+		font-size: 7.5vw;
+		margin-left: 15.2vw;
+		margin-top: -2%;
+		color: lime;
+	}
+	.coinSymbol {
+		margin-left: 8vw;
+		margin-top: -6%;
+		font-size: 2.5vw;
+	}
+	.coinRow3 {
+		/* display: none; */
+	}
+	.coinRow4 {
+		/* display: none; */
+	}
+	.chart {
+		margin-top: 4%;
+		margin-left: 23.1vw;
+		width: 18vw;
+	}
+	.coinRow2 {
+	}
+
+	.coin24hrchangemoneyred {
+		color: red;
+		font-size: 2vw;
+
+		margin-top: 10%;
+	}
+	.coin24hrchangemoneygreen {
+		color: lime;
+		font-size: 2vw;
+		margin-top: 1%;
+	}
+	.coin24hrchangepercentagered {
+		color: red;
+		font-size: 2vw;
+		margin-top: -1%;
+	}
+	.coin24hrchangepercentagegreen {
+		color: lime;
+		font-size: 2vw;
+		margin-top: 4%;
+	}
+	.hr24Change {
+		float: left;
+		margin-left: 3vw;
+		margin-top: 4%;
+		/* border: 1px solid white; */
+		width: fit-content;
+		height: fit-content;
+	}
+	.marketCap {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		width: fit-content;
+		height: fit-content;
+		/* border: 1px solid white; */
+		margin-left: 2.25vw;
+		margin-top: 10%;
+	}
+	.volumeTotal {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		width: fit-content;
+		height: fit-content;
+		/* border: 1px solid white; */
+		margin-left: 2.25vw;
+		margin-top: 1%;
+	}
+
+	.coinRow4 {
+		width: fit-content;
+		height: fit-content;
+		margin-top: 25%;
+		margin-left: 3vw;
+	}
+	.low24h {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		margin-right: 9vw;
+		/* border: 1px solid white; */
+		/* margin-left: 2.25vw; */
+	}
+	.high24h {
+		color: white;
+		font-family: monospace;
+		font-size: 1.75vw;
+		margin-top: 10%;
+		/* border: 1px solid white; */
 	}
 }

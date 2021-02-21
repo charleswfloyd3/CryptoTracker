@@ -262,6 +262,8 @@ body {
 	padding-top: 25px;
 	margin-top: 53px;
 	z-index: 1;
+	height: 92px;
+	align-items: left;
 }
 .shortcutBtn {
 	font-size: 50px;
@@ -372,4 +374,28 @@ body {
 	margin-top: 40%;
 	z-index: 10;
 	border-radius: 15px;
+}
+.shortcutscontainer {
+	display: flex;
+	width: fit-content;
+	margin: 0 auto;
+}
+@keyframes shake {
+	10%,
+	90% {
+		transform: translate3d(-1px, 0, 0);
+	}
+	20%,
+	80% {
+		transform: translate3d(2px, 0, 0);
+	}
+	30%,
+	50%,
+	70% {
+		transform: translate3d(-4px, 0, 0);
+	}
+	40%,
+	60% {
+		transform: translate3d(4px, 0, 0);
+	}
 }
