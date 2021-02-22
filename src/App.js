@@ -30,7 +30,7 @@ function App() {
 
     for(let i =0; i< response.data.length; i++){
         
-        if(response.data[i].id == shortcutCoin.current.value || response.data[i].symbol == shortcutCoin.current.value ){
+        if(response.data[i].id == shortcutCoin.current.value.toLowerCase() || response.data[i].symbol == shortcutCoin.current.value.toLowerCase() ){
             let coinDataShortcut = response.data[i]
 
                       setshortcutCoinData(coinDataShortcut)
