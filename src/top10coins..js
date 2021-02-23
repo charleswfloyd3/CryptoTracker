@@ -28,7 +28,7 @@ const [redOrGreen, setredOrGreen] = useState(true)
                         
                          if(JSON.stringify(coin.price_change_percentage_24h).includes("-")){
                             // setredOrGreen(false)
-                            console.log(redOrGreen)
+                            // console.log(redOrGreen)
                             
                         }
                        
