@@ -23,7 +23,7 @@ function App() {
   const [shortcutCoinData, setshortcutCoinData] = useState({"id":"bitcoin","symbol":"btc","name":"Bitcoin","image":"https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579","current_price":55852,"market_cap":1038642615178,"market_cap_rank":1,"fully_diluted_valuation":1170563757072,"total_volume":70908249304,"high_24h":56259,"low_24h":50907,"price_change_24h":4106.69,"price_change_percentage_24h":7.93638,"market_cap_change_24h":72387877275,"market_cap_change_percentage_24h":7.49159,"circulating_supply":18633325.0,"total_supply":21000000.0,"max_supply":21000000.0,"ath":56259,"ath_change_percentage":-1.02725,"ath_date":"2021-02-19T21:30:45.381Z","atl":67.81,"atl_change_percentage":82014.80834,"atl_date":"2013-07-06T00:00:00.000Z","roi":null,"last_updated":"2021-02-19T23:13:11.788Z"})
   let coins10 = []
   const [shortcutState, setshortcutState] = useState(1)
-
+  const [shortCutList, setshortCutList] = useState([])
 
   const shortcutAddition = (e) =>{
    Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false").then(response =>{
@@ -167,7 +167,7 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
       </form>
       <div className="shortcutscontainer">
        
-      {newShortcut ? <Shortcuts function={shortcutHandlerFail} shortcutInfo={shortcutCoinData}  shortCutModalLink={shortCutModalLink}/> : <div></div>}
+      {newShortcut ? <Shortcuts function={shortcutHandlerFail} shortcutInfo={shortcutCoinData}  shortCutModalLink={shortCutModalLink} listOfShorcuts={shortCutList}/> : <div></div>}
   
         <div className="shortcut" onClick={shortcutHandler}>
           <p className="shortcutBtn"><p className="addShortcutText">+</p></p>
