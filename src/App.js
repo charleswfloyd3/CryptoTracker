@@ -167,7 +167,7 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
       </form>
       <div className="shortcutscontainer">
        
-      {newShortcut ? <Shortcuts function={shortcutHandlerFail} shortcutInfo={shortcutCoinData}  shortCutModalLink={shortCutModalLink} listOfShorcuts={shortCutList}/> : <div></div>}
+      {newShortcut ? <Shortcuts function={shortcutHandlerFail} shortcutInfo={shortcutCoinData}  shortCutModalLink={shortCutModalLink} listOfShorcuts={shortCutList} /> : <div></div>}
   
         <div className="shortcut" onClick={shortcutHandler}>
           <p className="shortcutBtn"><p className="addShortcutText">+</p></p>

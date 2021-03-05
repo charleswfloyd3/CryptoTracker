@@ -4,8 +4,11 @@ import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
 import './shortcut.css'
 
 function Shortcuts(props){
-let  shortcutHandler = props.function
+let shortcutList = props.listOfShortcuts 
+
+let shortcutHandler = props.function
 let shorcut_info = props.shortcutInfo
+
 console.log(shorcut_info)
     return(
       <div> 
@@ -16,6 +19,7 @@ console.log(shorcut_info)
         
         </div></Link>
         </div> }
+                
         </div> 
     )
 }
