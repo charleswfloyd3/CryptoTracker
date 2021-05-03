@@ -10,6 +10,8 @@ body {
 	/* -ms-transform: translateY(-50%); */
 	/* transform: translateY(-50%); */
 }
+.btcLogo {
+}
 .App {
 	text-align: center;
 	height: 100vh;
@@ -27,12 +29,11 @@ body {
 	margin: 0 auto;
 }
 .websiteTitle {
-	margin-top: 17%;
 	font-size: 70px;
 	font-weight: 400;
 	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 	font-family: monospace;
-	margin-top: calc(335px - 10vw);
+	margin-top: 22vh;
 }
 .btcLogo {
 	margin-left: 1vw;
@@ -79,7 +80,7 @@ body {
 	border-bottom-right-radius: 180px;
 
 	color: white;
-	font-size: 1.5vw;
+	font-size: 20px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	width: 8vw;
 	font-family: monospace;
@@ -91,6 +92,7 @@ body {
 	height: 30px;
 	width: 30px;
 	margin-left: 0 auto;
+	padding-left: 0.22vw;
 	/* z-index: .5; */
 	margin-top: 5.5%;
 }
@@ -160,7 +162,7 @@ body {
 		transform: translateY(-15px);
 	}
 }
-@media (max-width: 778px) {
+@media (max-width: 900px) {
 	/* .websiteTitle {
 		margin-top: 17%;
 		font-size: 50px;
@@ -170,7 +172,6 @@ body {
 		width: 50px;
 	}
 	.searchBtn {
-		height: 36.75px;
 		margin-top: 2%;
 		background-color: #f2a900;
 		outline: none;
@@ -179,6 +180,8 @@ body {
 		font-size: 2vw;
 		font-family: Verdana, Geneva, Tahoma, sans-serif;
 		width: 11vw;
+		margin-left: -5px;
+		height: 36px;
 	}
 	/* .downarrow {
 		margin-top: 80px;
@@ -287,11 +290,6 @@ body {
 	/* border: 2px solid white; */
 
 	background-color: rgb(63, 63, 63);
-}
-@media (max-height: 865px) {
-	.websiteTitle {
-		margin-top: calc(305px - 12vw);
-	}
 }
 
 .shortcutModalTitle {
