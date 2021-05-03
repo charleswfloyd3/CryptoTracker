@@ -2,11 +2,10 @@
 	/* positon: absolute; */
 	height: 50vw;
 	width: 100vw;
-	background-image: url("backgrondimage.png");
+	/* background-image: url("backgrondimage.png"); */
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-color: #f2a900;
-
+	background-image: linear-gradient(white);
 	justify-content: center;
 	display: flex;
 	align-items: center;

@@ -1,10 +1,11 @@
 .secondpagediv {
-	height: fit-content;
+	height: 100vh;
 	width: 100vw;
 	top: 0;
-	background-image: url("backgrondimage.png");
+	background-color: black;
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow-y: hidden;
 }
 .coinData1 {
 	height: 90vh;
