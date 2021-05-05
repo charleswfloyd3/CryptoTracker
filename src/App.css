@@ -430,3 +430,8 @@ body {
 		font-size: 40px;
 	}
 } */
+@media (max-width: 1245px) {
+	.App {
+		height: 100vh;
+	}
+}
