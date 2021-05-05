@@ -14,7 +14,7 @@ body {
 }
 .App {
 	text-align: center;
-	height: 100vh;
+	height: 120vh;
 	overflow: hidden;
 	margin-top: 0px;
 	color: white;
@@ -269,7 +269,7 @@ body {
 	align-items: left;
 }
 .shortcutBtn {
-	font-size: 50px;
+	font-size: 47.5px;
 	border: 2px solid white;
 	border-radius: 180px;
 	/* width: 50px;
@@ -397,3 +397,36 @@ body {
 		transform: translate3d(4px, 0, 0);
 	}
 }
+@media (max-width: 575px) {
+	.websiteTitle {
+		font-size: 12vw;
+		margin-top: 30vh;
+	}
+	.btcLogo {
+		width: 7vw;
+	}
+	.sloganCrypto {
+		font-size: 3.5vw;
+	}
+	.shortcutBtn {
+		font-size: 30px;
+		width: 37px;
+		height: 35px;
+		padding-top: 2px;
+	}
+	.addShortcutTitle {
+		font-size: 10px;
+	}
+	.coinSearchBarTitle {
+		font-size: 10px;
+	}
+	.shortcutCoinImage {
+		width: 37px;
+		height: 28px;
+	}
+}
+/* @media (max-width: 490px) {
+	.websiteTitle {
+		font-size: 40px;
+	}
+} */

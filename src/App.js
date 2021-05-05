@@ -172,7 +172,7 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
   
         <div className="shortcut" onClick={shortcutHandler}>
           <p className="shortcutBtn"><p className="addShortcutText">+</p></p>
-          <p className="addShortcutTitle">Track coin</p>
+          <p className="addShortcutTitle">Track Coin</p>
         
         </div>
       </div>
