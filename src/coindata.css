@@ -14,11 +14,11 @@
 	justify-content: center;
 	display: flex;
 	overflow: hidden;
+	align-items: center;
 }
 
 .coinStuff {
 	background-color: black;
-	border: 2px solid white;
 	width: 50vw;
 	/* border: 4px solid black; */
 	height: 500px;
@@ -28,6 +28,7 @@
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.7);
 	overflow: hidden;
 	padding-bottom: 20px;
+	margin-top: 100px;
 }
 
 .coinRow1 {
@@ -410,6 +411,4 @@
 		margin-top: 10%;
 		/* border: 1px solid white; */
 	}
-}
-.companySymbol {
 }
