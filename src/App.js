@@ -158,7 +158,7 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
     
     <div className="App">
       <div className="outerDiv">
-      <h1 className="websiteTitle">Cryptobase<img src="images/btclogo.png" className="btcLogo"></img></h1>
+      <h1 className="websiteTitle" onClick={()=>{window.location.reload();}}>Cryptobase<img src="images/btclogo.png" className="btcLogo"></img></h1>
       <p className="sloganCrypto"> google for crypto...</p>
 
       {/* <p className="coinSearchBarTitle"> Search for your coin...</p> */}
@@ -180,7 +180,7 @@ Axios.get("https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=
         <div className="shortCutModalInner">
           <p className="shortcutModalTitle">Add coin shortcut</p>
           <p className="shortcutModalCoinTitle">Coin Name</p>
-          <input type="text" className="shortcutModalinputbox" autoFocus={true} ref={shortcutCoin} ></input>
+          <input type="text" className="shortcutModalinputbox"  ref={shortcutCoin} autoFocus={true} ></input>
           <section className="exitButtons">
             <button className="cancelBtn" onClick={shortcutHandlerFail}>Cancel</button>
             <button className="doneBtn" onClick={setShortF}>Done</button>

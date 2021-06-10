@@ -34,6 +34,7 @@ body {
 	/* font-family: Verdana, Geneva, Tahoma, sans-serif; */
 	font-family: monospace;
 	margin-top: 22vh;
+	cursor: pointer;
 }
 .btcLogo {
 	margin-left: 1vw;
@@ -329,8 +330,11 @@ body {
 	outline-style: none;
 	margin-right: 0.5vw;
 	padding: 8px;
+	cursor: pointer;
 }
 .doneBtn {
+	cursor: pointer;
+
 	font-size: 16px;
 	background-color: inherit;
 	border: none;
@@ -360,13 +364,16 @@ body {
 	top: 0;
 }
 .shortCutModalInner {
+	padding-top: 20px;
 	background-color: black;
 	display: block;
 	height: 280px;
 	color: white;
 	/* background-color: white; */
 	background-size: cover;
-	border: 2px solid white;
+	border: 0.1px solid white;
+	box-shadow: 0px 0px 1000px rgba(121, 121, 121, 0.16);
+
 	width: 500px;
 	margin: 0 auto;
 	margin-top: 40%;
